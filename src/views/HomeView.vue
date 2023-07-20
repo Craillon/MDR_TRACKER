@@ -137,7 +137,7 @@
           <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
               <!-- Modal header -->
               <form class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                  <h3 :class="[ isError.color ,'uppercase text-xl font-semibold text-gray-900 dark:text-white']">
+                  <h3 :class="[ isError.color ,'uppercase text-xl font-semibold text-red-700 dark:text-white']">
                       [{{ isError.status }}]
                   </h3>
                   <button @click="closeModel" type="submit" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
