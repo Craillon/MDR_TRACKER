@@ -45,7 +45,7 @@
       >
         <div :class="[leftFileInputShow ? 'hidden' : 'w-full']">
           <img src="https://img.icons8.com/fluency/240/microsoft-excel-2019.png" alt="excel icon" class="w-16 mx-auto my-3 p-2 h-16 rounded-full bg-white">
-          <h1 class="text-sm text-center font-semibold uppercase">Exportez le MDR en
+          <h1 class="text-sm text-center font-semibold uppercase">drag and drop
             <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">.xlsx</kbd>
           </h1>
         </div>
@@ -86,7 +86,7 @@
       >
         <div :class="rightFileInputShow ? 'hidden' : 'w-full'">
           <img src="https://img.icons8.com/fluency/240/microsoft-excel-2019.png" alt="excel icon" class="w-16 mx-auto my-3 p-2 h-16 rounded-full bg-white">
-          <h1 class="text-sm text-center font-semibold uppercase">Exportez le MDR en 
+          <h1 class="text-sm text-center font-semibold uppercase">drag and drop  
             <kbd class="px-2 py-1.5 text-xs font-semibold text-gray-800 bg-gray-100 border border-gray-200 rounded-lg dark:bg-gray-600 dark:text-gray-100 dark:border-gray-500">.xlsx</kbd>
 
           </h1>
@@ -121,7 +121,7 @@
     <h1 class="text-slate-50 text-sm">LF DATA : <span class="font- text-xl">{{ filesItems.rowLeft }}&nbsp;</span>rows</h1>
     <h1 class="text-slate-50 text-sm">RF DATA : <span class="font- text-xl">{{ filesItems.rowRight }}&nbsp;</span>rows</h1>
     <h1 class="text-slate-50 text-sm">Ecart  : <span class="font- text-xl">{{ Math.abs(filesItems.rowLeft - filesItems.rowRight) }}</span></h1>
-    <a href="https://vistin-portfolio.netlify.app/" class="absolute left-10 inline-flex items-center text-white space-x-5">
+    <a href="https://vistin-portfolio.netlify.app/" class="hidden md:inline-flex absolute left-10  items-center text-white space-x-5">
       <span>Vistin Beaugarel DIMI @Craillon {{ new Date().getFullYear() }}</span>
       <img src="../components/icons/image-1000x1000.jpg" alt="designer image" class="w-10 h-10 rounded-full">
     </a>
