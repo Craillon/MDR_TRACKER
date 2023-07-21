@@ -14,7 +14,7 @@ const greaterSM = breakpoints.greater('sm')
   </main>
   <div v-else class="flex items-center justify-center h-screen">
     <div class="w-full h-96">
-      <img src="./components/icons/404 Error Page not Found with people connecting a plug-pana.svg" alt="" class="px-4 mb-16">
+      <img src="./components/icons/plug-pana.svg" alt="" class="px-4 mb-16">
       <h1 class=" text-center text-slate-700 px-8">
         Vous ne pouvez pas utiliser cette App depuis un mobile
       </h1>
