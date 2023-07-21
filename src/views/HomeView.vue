@@ -1,13 +1,9 @@
 <template>
-  <div class="font-bold flex justify-between px-4 py-6 w-11/12 border- mx-auto">
-    <div class="inline-flex space-x-4">
-      <img src="../assets/armoirie-la-republique-du-congo1.png" alt="" class="h-14">
-      <div class="text-lg uppercase">
-        <h1 class="text-center">M.B.C.P.P.P</h1>
-        <h1 class="text-xs font-sans text-center  bg-green-600 px-4 inline-flex items-center space-x-4 text-slate-100 p-2 rounded-full">
-          <!-- <img src="../assets/logo-sipae.svg" alt="" class="h-4"> -->
-          <span class="">mdr Checker</span>
-        </h1>
+  <div class="font-bold flex justify-between px-4 py-6 md:w-11/12 border- mx-auto">
+    <div class="inline-flex items-center space-x-4">
+      <img src="../assets/armoirie-la-republique-du-congo1.png" alt="" class="h-10 md:h-7">
+      <div class="text-lg hidden md:block md:text-lg uppercase">
+        <h1 class="text-center">MBCPPP</h1>
       </div>
     </div>
     <form v-show="filesItems.left.name !== '' && filesItems.right.name !== '' && isError.confirm == false">
@@ -26,7 +22,7 @@
     </form>
   </div>
   <!-- INPUTS SECTIONS  -->
-  <div class="relative items-center grid grid-cols-2 gap-4 w-11/12 mx-auto px-4 mt-28 mb-10">
+  <div class="relative items-center grid grid-cols-2 gap-4 md:w-11/12 mx-auto px-1 md:px-4 mt-28 md:mt-28 mb-10">
     <!-- LEFT DAD -->
     <div
       @drop.prevent="leftDrop"
@@ -105,10 +101,10 @@
   </div>
 
   <!-- DETAIL SECTION  -->
-  <div class="grid grid-cols-2 gap-4 w-11/12 mx-auto">
+  <div class=" hidden md:grid grid-cols-2 gap-4 w-11/12 mx-auto">
     <div class="col-span-1 p-2">
-      <h1 class="text-slate-800 font-semibold">Nom : <span class="font-sans">{{ filesItems.left.name }}</span></h1>
-      <h1 class="text-slate-800 font-semibold">Taille : <span class="font-sans text-amber-700">{{ filesItems.left.size }} Ko</span></h1>
+      <h1 class="text-slate-800 font-semibold text-sm md:text-base">Nom : <span class="font-sans">{{ filesItems.left.name }}</span></h1>
+      <h1 class="text-slate-800 font-semibold text-sm md:text-base">Taille : <span class="font-sans text-amber-700">{{ filesItems.left.size }} Ko</span></h1>
     </div>
     <div class="col-span-1 text-end p-2">
       <h1 class="text-slate-800 font-semibold"><span class="font-sans">{{ filesItems.right.name }}</span> : Nom</h1>
@@ -118,7 +114,7 @@
 
   <!-- FOOTER SECTIONS  -->
   <div class="col-span-2 flex items-center space-x-5 justify-center p-2 absolute bottom-0 left-0 right-0 mx-auto py-5 bg-slate-600">
-    <h1 class="text-slate-50 text-sm">LF DATA : <span class="font- text-xl">{{ filesItems.rowLeft }}&nbsp;</span>rows</h1>
+    <h1 class="text-slate-50 text-sm">LF DATA : <span class="font- md:text-xl">{{ filesItems.rowLeft }}&nbsp;</span>rows</h1>
     <h1 class="text-slate-50 text-sm">RF DATA : <span class="font- text-xl">{{ filesItems.rowRight }}&nbsp;</span>rows</h1>
     <h1 class="text-slate-50 text-sm">Ecart  : <span class="font- text-xl">{{ Math.abs(filesItems.rowLeft - filesItems.rowRight) }}</span></h1>
     <a href="https://vistin-portfolio.netlify.app/" class="hidden md:inline-flex absolute left-10  items-center text-white space-x-5">
@@ -431,3 +427,9 @@
   }
 
  </script>
+
+ <style scoped>
+ .g {
+  background-color: #0e9f6e;
+ }
+ </style>
